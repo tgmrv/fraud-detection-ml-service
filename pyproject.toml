@@ -1,0 +1,17 @@
+[project]
+name = "fraud-detection-ml-service"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.9"
+dependencies = [
+    "ipykernel>=6.31.0",
+    "pandas>=2.3.3",
+    "scikit-learn>=1.6.1",
+]
+
+[project.scripts]
+fraud-detection-ml-service = "fraud_detection_ml_service:main"
+
+[build-system]
+requires = ["uv_build>=0.12.22,<0.13.0"]
+build-backend = "uv_build"

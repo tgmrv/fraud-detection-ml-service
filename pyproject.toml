@@ -2,7 +2,7 @@
 name = "fraud-detection-ml-service"
 version = "0.1.0"
 description = "Add your description here"
-requires-python = ">=3.9"
+requires-python = ">=3.12"
 dependencies = [
     "fastapi>=0.128.8",
     "ipykernel>=6.31.0",
@@ -20,6 +20,6 @@ build-backend = "uv_build"
 
 [dependency-groups]
 dev = [
-    "httpx>=0.28.1",
+    "httpx2>=2.16.0",
     "pytest>=8.4.2",
 ]

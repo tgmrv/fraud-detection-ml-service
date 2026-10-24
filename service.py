@@ -21,4 +21,4 @@ class PredictionService:
 
 @lru_cache
 def get_prediction_service() -> PredictionService:
-    return PredictionService("artifacts/baseline_model.joblib")
+    return PredictionService("artifacts/random_forest_model.joblib")

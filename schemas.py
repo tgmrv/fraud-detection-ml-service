@@ -1,7 +1,11 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 
 
 class TransactionRequestSchema(BaseModel):
+    model_config = ConfigDict(
+        allow_inf_nan=False,
+    )
+
     Time: float
     V1: float
     V2: float
